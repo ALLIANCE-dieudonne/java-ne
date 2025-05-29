@@ -1,0 +1,21 @@
+package com.alliance.dtos;
+
+import com.alliance.enums.EmployeeStatus;
+import lombok.Data;
+
+import java.time.LocalDate;
+import java.util.List;
+
+@Data
+
+public class EmployeeResponseDTO {
+    private String code;
+    private String firstName;
+    private String lastName;
+    private String email;
+    private String mobile;
+    private LocalDate dateOfBirth;
+    private EmployeeStatus status;
+    private List<String> roles;
+
+}
